@@ -14,7 +14,10 @@ app.use("/api/file", fileRoutes)
 app.use("/api/auth", authRoutes)
 app.use("/api/ai", aiRoutes)
 
-
+app.get("/",(req,res) => {
+    res.send("Study geni api is working!!!")
+})
 app.listen(PORT,()=>{
     console.log(`Server is running on PORT: ${PORT} `)
+
 })
